@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Resume</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-purple-900">
+
+    <nav class="bg-purple-900 flex justify-between items-center px-6 py-4 shadow-md sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/5994/5994710.png"
+             class="h-12" alt="folder">
+        <span class="text-xl font-bold text-white">Online Resume</span>
+    </div>
+
+    <ul class="flex space-x-7 text-white">
+        <li class="cursor-pointer hover:text-yellow-300"><a href="#home">Home</a></li>
+        <li class="cursor-pointer hover:text-yellow-300"><a href="#about">About Me</a></li>
+        <li class="cursor-pointer hover:text-yellow-300"><a href="#projects">Projects</a></li>
+        <li class="cursor-pointer hover:text-yellow-300"><a href="#contact">Contact Me</a></li>
+    </ul>
+
+</nav>
+
+
+    <main id="home" class="flex flex-col md:flex-row justify-around items-center py-20 px-10">
+
+        <div class="max-w-xl">
+            <div class="text-green-400 text-4xl font-semibold px-2">Professional Web Developer</div>
+            <div class="text-white text-3xl mt-3 px-2">Hello, my name is Shashank Kumar</div>
+
+            <p class="text-white mt-4 px-2 leading-relaxed w-2/3">
+                B.Tech CSE • Web Developer • Machine Learning Enthusiast<br><br>
+                I build fast, accessible web applications and explore applied machine learning.
+                I focus on readable code, pragmatic engineering, and delightful user experiences.
+            </p>
+
+            <div class="mt-6 px-2">
+                <button class="bg-white text-purple-900 font-medium px-5 py-2 rounded-2xl hover:bg-fuchsia-700 hover:text-white mx-2">
+                    Download
+                </button>
+                <button class="bg-yellow-500 text-black font-medium px-5 py-2 rounded-2xl hover:bg-fuchsia-700 hover:text-white mx-2">
+                    Hire Me
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-10 md:mt-0">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/67/49/fa/6749fa85-070a-ca5e-ef01-4b3cb930e97e/source/512x512bb.jpg"
+                class="h-80 w-80 rounded-3xl shadow-2xl" alt="resume">
+        </div>
+
+    </main>
+
+    <section id="about" class="max-w-3xl mx-auto mt-24 px-6 text-white">
+        <h1 class="text-4xl font-bold text-green-400 mb-6">About Me</h1>
+
+        <p class="text-xl">
+            I am Shashank Kumar, a Computer Science Engineering student and passionate Web Developer.
+            I focus on building modern, responsive, and high-quality web interfaces that deliver smooth user experiences.
+        </p>
+
+        <p class="mt-4 text-lg">
+            I also explore Machine Learning models and Python automation.  
+            I believe in clean code, simplicity, and continuous learning.
+        </p>
+
+        <h2 class="text-3xl font-semibold text-yellow-400 mt-10">Skills</h2>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Python & Machine Learning Basics</li>
+            <li>Git, GitHub</li>
+            <li>Java OOP Concepts</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="max-w-5xl mx-auto mt-24 px-6 text-white">
+        <h1 class="text-4xl font-bold text-green-400 mb-6">Projects</h1>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="bg-purple-800 p-6 rounded-xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-3">Personal Portfolio Website</h2>
+                <p>A responsive portfolio built using HTML, Tailwind CSS, and JavaScript.</p>
+            </div>
+
+            <div class="bg-purple-800 p-6 rounded-xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-3">To-Do List App</h2>
+                <p>A basic to do list built using HTML,Tailwind CSS.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-lg mx-auto mt-24 px-6 text-white mb-20">
+        <h1 class="text-4xl font-bold text-green-400 mb-6">Contact Me</h1>
+
+        <form class="space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border-2 text-white">
+            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border-2 text-white">
+            <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg border-2 text-white"></textarea>
+
+            <button
+                class="bg-yellow-500 text-black px-6 py-2 rounded-xl hover:bg-fuchsia-700 hover:text-white font-semibold">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+</body>
+</html>
